@@ -1,0 +1,36 @@
+<3 /- dotenv Crash Course / By Achref -/ <3
+
+-> What is environement variables?
+
+-> What is process.env (node) / OscillatorNode.environ (python) ?
+
+-> What's zero-dependency means?
+
+means the module doensn't depend on any other packages to function.
+
+-> What is dotenv module?
+
+- Dot is zero-dependency module taht loads environment variables from a .env file process.env
+
+-> Install
+
+npm i dotenv
+
+-> Usage
+
+- Create a .env file in the root directory of your project.
+(Add environement-specific variables on new lines in the form of NAME=VALUE)
+
+- The .env file should never be committed to the source code repository. 
+We must place the file into the .gitgnore file.
+(When using git.)
+
+- [THe .env parsing rules] :
+  * the variables are written in uppercase letters (e.g. PORT)
+  * empty lines are skipped
+  * comments start with #
+  * empty values become emty strings
+  * Existing environement variables are not modified; they are skipped.
+
+  - require and configure dotenv.
+  require('dotenv).config()
